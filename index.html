@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="generator" content="quarto-1.3.450">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <meta name="author" content="NAJMA RESTI AULIA">
+    <meta name="dcterms.date" content="2024-01-21">
+
+    <title>Pengaruh Nilai Ekspor terhadap Jumlah Pengangguran di Indonesia pada tahun 2012-2022</title>
+    <style>
+        code {
+            white-space: pre-wrap;
+        }
+        
+        span.smallcaps {
+            font-variant: small-caps;
+        }
+        
+        div.columns {
+            display: flex;
+            gap: min(4vw, 1.5em);
+        }
+        
+        div.column {
+            flex: auto;
+            overflow-x: auto;
+        }
+        
+        div.hanging-indent {
+            margin-left: 1.5em;
+            text-indent: -1.5em;
+        }
+        
+        ul.task-list {
+            list-style: none;
+        }
+        
+        ul.task-list li input[type="checkbox"] {
+            width: 0.8em;
+            margin: 0 0.8em 0.2em -1em;
+            /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */
+            vertical-align: middle;
+        }
+        /* CSS for syntax highlighting */
+        
+        pre>code.sourceCode {
+            white-space: pre;
+            position: relative;
+        }
+        
+        pre>code.sourceCode>span {
+            display: inline-block;
+            line-height: 1.25;
+        }
+        
+        pre>code.sourceCode>span:empty {
+            height: 1.2em;
+        }
+        
+        .sourceCode {
+            overflow: visible;
+        }
+        
+        code.sourceCode>span {
+            color: inherit;
+            text-decoration: inherit;
+        }
+        
+        div.sourceCode {
+            margin: 1em 0;
+        }
+        
+        pre.sourceCode {
+            margin: 0;
+        }
+        
+        @media screen {
+            div.sourceCode {
+                overflow: auto;
+            }
+        }
+        
+        @media print {
+            pre>code.sourceCode {
+                white-space: pre-wrap;
+            }
+            pre>code.sourceCode>span {
+                text-indent: -5em;
+                padding-left: 5em;
+            }
+        }
+        
+        pre.numberSource code {
+            counter-reset: source-line 0;
+        }
+        
+        pre.numberSource code>span {
+            position: relative;
+            left: -4em;
+            counter-increment: source-line;
+        }
+        
+        pre.numberSource code>span>a:first-child::before {
+            content: counter(source-line);
+            position: relative;
+            left: -1em;
+            text-align: right;
+            vertical-align: baseline;
+            border: none;
+            display: inline-block;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            padding: 0 4px;
+            width: 4em;
+        }
+        
+        pre.numberSource {
+            margin-left: 3em;
+            padding-left: 4px;
+        }
+        
+        div.sourceCode {}
+        
+        @media screen {
+            pre>code.sourceCode>span>a:first-child::before {
+                text-decoration: underline;
+            }
+        }
+    </style>
+
+
+    <script src="./libs/clipboard/clipboard.min.js"></script>
+    <script src="./libs/quarto-html/quarto.js"></script>
+    <script src="./libs/quarto-html/popper.min.js"></script>
+    <script src="./libs/quarto-html/tippy.umd.min.js"></script>
+    <script src="./libs/quarto-html/anchor.min.js"></script>
+    <link href="./libs/quarto-html/tippy.css" rel="stylesheet">
+    <link href="./libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+    <script src="./libs/bootstrap/bootstrap.min.js"></script>
+    <link href="./libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+    <link href="./libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body>
+
+    <div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+        <main class="content" id="quarto-document-content">
+
+            <header id="title-block-header" class="quarto-title-block default">
+                <div class="quarto-title">
+                    <h1 class="title">Pengaruh Nilai Ekspor terhadap Jumlah Pengangguran di Indonesia pada tahun 2012-2022</h1>
+                    <p class="subtitle lead">Metode Penelitian Politeknik APP Jakarta</p>
+                </div>
+
+
+
+                <div class="quarto-title-meta">
+
+                    <div>
+                        <div class="quarto-title-meta-heading">Author</div>
+                        <div class="quarto-title-meta-contents">
+                            <p>NAJMA RESTI AULIA </p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="quarto-title-meta-heading">Published</div>
+                        <div class="quarto-title-meta-contents">
+                            <p class="date">January 21, 2024</p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </header>
+
+            <div class="quarto-figure quarto-figure-center">
+                <figure class="figure">
+                    <p><img src="poltekapp.jpg" class="img-fluid figure-img" width="385"></p>
+                </figure>
+            </div>
+            <section id="pendahuluan" class="level2" data-number="1">
+                <h2 data-number="1" class="anchored" data-anchor-id="pendahuluan"><span class="header-section-number">1</span> Pendahuluan</h2>
+                <section id="latar-belakang" class="level3" data-number="1.1">
+                    <h3 data-number="1.1" class="anchored" data-anchor-id="latar-belakang"><span class="header-section-number">1.1</span> Latar Belakang</h3>
+                    <p>Indonesia merupakan negara dengan potensi ekspor yang besar, namun tingkat pengangguran di Indonesia juga masih tinggi. Ekspor merupakan salah satu faktor penting yang dapat mendorong pertumbuhan ekonomi. Pertumbuhan ekonomi yang tinggi
+                        dapat menciptakan lapangan kerja baru dan mengurangi pengangguran. Pengangguran merupakan masalah sosial yang serius. Pengangguran dapat menyebabkan kemiskinan, kriminalitas, dan masalah sosial lainnya. Oleh karena itu, penting
+                        untuk menganalisis pengaruh nilai ekspor terhadap tingkat pengangguran di Indonesia. Hasil penelitian tentang topik ini dapat digunakan untuk merumuskan kebijakan yang tepat untuk meningkatkan ekspor dan mengurangi pengangguran
+                        di Indonesia, sehingga dapat meningkatkan kesejahteraan masyarakat dan mewujudkan keadilan sosial.&nbsp;</p>
+                    <p>Penelitian kuantitatif dengan menggunakan data statistik untuk menganalisis hubungan antara nilai ekspor dan tingkat pengangguran. Penelitian tentang topik ini dapat dilakukan oleh para peneliti dari berbagai disiplin ilmu, seperti
+                        ekonomi, ilmu politik, dan sosiologi. Dalam argumen ekonomi, Ekspor merupakan salah satu faktor penting yang dapat mendorong pertumbuhan ekonomi. Pertumbuhan ekonomi yang tinggi dapat menciptakan lapangan kerja baru dan mengurangi
+                        pengangguran. Oleh karena itu, peningkatan ekspor dapat menjadi salah satu solusi untuk mengurangi pengangguran di Indonesia. Lalu dari argumen sosial, Pengangguran merupakan masalah sosial yang serius. Pengangguran dapat menyebabkan
+                        kemiskinan, kriminalitas, dan masalah sosial lainnya. Oleh karena itu, penyelesaian permasalahan pengangguran dapat menjadi salah satu upaya untuk meningkatkan kesejahteraan masyarakat dan mewujudkan keadilan sosial. Kemudian dari
+                        argumen politik, Pengangguran dapat menjadi sumber ketidakstabilan politik. Masyarakat yang menganggur dapat menjadi sasaran mudah bagi kelompok-kelompok politik yang radikal. Oleh karena itu, penyelesaian permasalahan pengangguran
+                        dapat menjadi salah satu upaya untuk menjaga stabilitas politik di Indonesia. Argumen-argumen tersebut menunjukkan bahwa permasalahan pengaruh nilai ekspor terhadap jumlah pengangguran di Indonesia merupakan permasalahan yang penting
+                        dan perlu diselesaikan. Penyelesaian permasalahan ini dapat memberikan manfaat yang besar bagi perekonomian, sosial, dan politik Indonesia.</p>
+                </section>
+                <section id="ruang-lingkup" class="level3" data-number="1.2">
+                    <h3 data-number="1.2" class="anchored" data-anchor-id="ruang-lingkup"><span class="header-section-number">1.2</span> Ruang Lingkup</h3>
+                    <p>Dalam penelitian ini penulis mengambil objek penelitian dari Badan Pusat Statistik Indonesia. Ruang lingkup penelitian ini terdapat 2 variabel antara lain nilai ekspor Indonesia, dan jumlah pengangguran di Indonesia. Data yang digunakan
+                        adalah data yang bersifat time series yaitu dalam kurun waktu 2012-2022, data inilah yang kemudian menjadi objek penelitian.</p>
+                </section>
+                <section id="rumusan-masalah" class="level3" data-number="1.3">
+                    <h3 data-number="1.3" class="anchored" data-anchor-id="rumusan-masalah"><span class="header-section-number">1.3</span> Rumusan Masalah</h3>
+                    <p>Berdasarkan uraian latar belakang diatas maka yang menjadi masalah pokok pada penelitian ini adalah:</p>
+                    <ol type="1">
+                        <li>
+                            <p>Apakah nilai ekspor berpengaruh pada jumlah pengangguran di Indonesia?</p>
+                        </li>
+                        <li>
+                            <p>Bagaimana hubungan nilai ekspor terhadap jumlah pengangguran di Indonesia?</p>
+                        </li>
+                    </ol>
+                </section>
+                <section id="tujuan-dan-manfaat-penelitian" class="level3" data-number="1.4">
+                    <h3 data-number="1.4" class="anchored" data-anchor-id="tujuan-dan-manfaat-penelitian"><span class="header-section-number">1.4</span> Tujuan dan Manfaat Penelitian</h3>
+                    <p>Bagian Berdasarkan latar belakang dan permasalahan yang ada maka tujuan dari penelitian ini adalah untuk mengetahui pengaruh nilai ekspor terhadap jumlah pengangguran di Indonesia dan mengetahui hubungan nilai ekspor terhadap peningkatan
+                        jumlah pengangguran di Indonesia..</p>
+                    <p>Adapun manfaat dari penelitian ini antara lain:</p>
+                    <p>1. Manfaat Teoritis</p>
+                    <p>Penelitian ini diharapkan dapat memberikan bantuan pemikiran dan menjadi ilmu pengetahuan bagi para pembaca untuk menambah wawasan seputar ekonomi.</p>
+                    <p>2. Manfaat Praktis</p>
+                    <p>a. Bagi Penulis</p>
+                    <p>Diharapkan penelitian ini bisa menjadi referensi bagi mereka yang ingin memperdalam tentang kegiatan ekspor, impor, dan jumlah pengangguran, sehingga dengan adanya karya lain secara tidak langsung penelitian ini mengalami penyempurnaan
+                        secara terus menerus. Dan diharapkan penelitian ini juga dapat menjadi referensi bagi setiap penulis yang ingin mengetahui penelitian menggunakan sistem regresi melalui R Studio.</p>
+                    <p>b. Bagi instansi</p>
+                    <p>Sebagai bahan masukan dan saran guna untuk memperbaiki sistem perekonomian Indonesia.</p>
+                </section>
+                <section id="package" class="level3" data-number="1.5">
+                    <h3 data-number="1.5" class="anchored" data-anchor-id="package"><span class="header-section-number">1.5</span> Package</h3>
+                    <p>Packages yang digunakan antara lain sebagai berikut:</p>
+                    <div class="cell">
+                        <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(WDI) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+                    </div>
+                </section>
+            </section>
+            <section id="studi-pustaka" class="level2" data-number="2">
+                <h2 data-number="2" class="anchored" data-anchor-id="studi-pustaka"><span class="header-section-number">2</span> Studi Pustaka</h2>
+                <p><strong>Nilai Ekspor</strong> adalah nilai seluruh barang dan jasa yang dikirimkan ke luar negeri yang ditentukan oleh permintaan luar negeri. Nilai ekspor dihitung dengan mengalikan jumlah barang dan jasa yang diekspor dengan harga barang
+                    dan jasa tersebut. Nilai ekspor merupakan salah satu indikator penting untuk mengukur kinerja perekonomian suatu negara. Nilai ekspor yang tinggi menunjukkan bahwa suatu negara memiliki kemampuan untuk menjual barang dan jasanya ke
+                    luar negeri. Hal ini dapat meningkatkan pendapatan negara, mendorong pertumbuhan ekonomi, dan menciptakan lapangan kerja.&nbsp;</p>
+                <p>Nilai ekspor dalam penelitian ini yaitu nilai ekspor dari tahun 2020 sampai dengan tahun 2022 dengan pengambilan data melalui situs kementerian perdagangan serta data yang bersumber dari BPS.&nbsp;</p>
+                <p><strong>Pengangguran</strong> adalah suatu keadaan di mana seseorang yang termasuk dalam angkatan kerja ingin memperoleh pekerjaan tetapi belum berhasil mendapatkannya. Angkatan kerja adalah penduduk yang berusia 15 tahun ke atas yang
+                    bekerja, mencari pekerjaan, dan mempersiapkan usaha. Pengangguran merupakan masalah ekonomi dan sosial yang serius. Pengangguran dapat menyebabkan kemiskinan, kriminalitas, dan masalah sosial lainnya.&nbsp;</p>
+                <p>Terdapat teori yang mengemukakan tentang pengangguran, yaitu pengangguran disebabkan oleh permintaan agregat yang rendah. Permintaan agregat yang rendah membuat pengusaha tidak dapat menjual barang dan jasa sebanyak yang mereka inginkan,
+                    sehingga mereka mengurangi jumlah tenaga kerja yang mereka kerjakan (keynesian 1936).</p>
+                <p>Adapun teori yang mengatakan bahwa nilai ekspor mempengaruhi jumlah pengangguran yang ada yaitu;</p>
+                <ul>
+                    <li><strong>Teori Keynesian</strong>, menyatakan bahwa permintaan agregat, yang terdiri dari permintaan domestik dan permintaan luar negeri, merupakan faktor utama yang menentukan tingkat output dan lapangan kerja. Peningkatan permintaan
+                        agregat akan mendorong pertumbuhan ekonomi dan menciptakan lapangan kerja baru.</li>
+                </ul>
+                <p>Dalam konteks topik ini, peningkatan ekspor dapat meningkatkan permintaan agregat, sehingga dapat mendorong pertumbuhan ekonomi dan mengurangi pengangguran.</p>
+                <ul>
+                    <li><strong>Teori Heckscher-Ohlin</strong>, menyatakan bahwa perdagangan internasional akan mendorong spesialisasi produksi dan perdagangan antar negara. Negara-negara akan mengekspor barang dan jasa yang mereka produksi dengan biaya lebih
+                        efisien dan mengimpor barang dan jasa yang mereka produksi dengan biaya lebih mahal.</li>
+                </ul>
+                <p>Dalam konteks topik ini, peningkatan ekspor dapat mendorong spesialisasi produksi di sektor-sektor yang memiliki keunggulan komparatif, sehingga dapat menciptakan lapangan kerja baru.</p>
+            </section>
+            <section id="metode-penelitian" class="level2" data-number="3">
+                <h2 data-number="3" class="anchored" data-anchor-id="metode-penelitian"><span class="header-section-number">3</span> Metode Penelitian</h2>
+                <section id="data" class="level3" data-number="3.1">
+                    <h3 data-number="3.1" class="anchored" data-anchor-id="data"><span class="header-section-number">3.1</span> Data</h3>
+                    <p>Berikut adalah data yang digunakan sebagai objek penelitian, data dibawah ini merupakan data yang menunjukan bahwa x merupakan nilai ekspor dan y menunjukan jumlah pengangguran setiap tahunnya. Dari tahun 2012-2022.</p>
+                    <table class="table">
+                        <tbody>
+                            <tr class="odd">
+                                <td>Tahun&nbsp;</td>
+                                <td>x</td>
+                                <td>y</td>
+                            </tr>
+                            <tr class="even">
+                                <td>2012</td>
+                                <td>24,59437879</td>
+                                <td>4,468</td>
+                            </tr>
+                            <tr class="odd">
+                                <td>2013</td>
+                                <td>23,92357638</td>
+                                <td>4,336</td>
+                            </tr>
+                            <tr class="even">
+                                <td>2014</td>
+                                <td>23,66598460</td>
+                                <td>4,049</td>
+                            </tr>
+                            <tr class="odd">
+                                <td>2015</td>
+                                <td>21,16017926</td>
+                                <td>4,514</td>
+                            </tr>
+                            <tr class="even">
+                                <td>2016</td>
+                                <td>19,08899385</td>
+                                <td>4,301</td>
+                            </tr>
+                            <tr class="odd">
+                                <td>2017</td>
+                                <td>20,17730444</td>
+                                <td>3,783</td>
+                            </tr>
+                            <tr class="even">
+                                <td>2018</td>
+                                <td>21,00274650</td>
+                                <td>4,387</td>
+                            </tr>
+                            <tr class="odd">
+                                <td>2019</td>
+                                <td>18,59152780</td>
+                                <td>3,590</td>
+                            </tr>
+                            <tr class="even">
+                                <td>2020</td>
+                                <td>17,33116828</td>
+                                <td>4,255</td>
+                            </tr>
+                            <tr class="odd">
+                                <td>2021</td>
+                                <td>21,40812311</td>
+                                <td>3,827</td>
+                            </tr>
+                            <tr class="even">
+                                <td>2022</td>
+                                <td>24,49244937</td>
+                                <td>3,462</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="quarto-figure quarto-figure-center">
+                        <figure class="figure">
+                            <p>
+                                <a href="https://databank.worldbank.org/source/world-development-indicators"><img src="./figure-html/World-Bank-World-Development-Indicators1.jpg" class="img-fluid figure-img" alt="figure 1: World Development Indicators" width="262"></a>
+                            </p>
+                            <figcaption class="figure-caption">figure 1: World Development Indicators (https://databank.worldbank.org/source/world-development-indicators)</figcaption>
+                        </figure>
+                    </div>
+                    <p>Penelitian ini menggunakan data Nilai Ekspor di Indonesia dengan satuan US$ dan Jumlah Pengangguran di Indonesia dengan satuan ribu orang pada tahun 2012 sampai 2022, yang bersumber dari World Development Indicators.</p>
+                    <div class="cell">
+                        <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">setwd</span>(<span class="st">"C:/UAS METOPEL NAJMA RESTI A"</span>)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>dat<span class="ot">&lt;-</span><span class="fu">read_excel</span>(<span class="st">'METOPEL NAJMA.xlsx'</span>)</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="fu">read_excel</span>(<span class="st">'METOPEL NAJMA.xlsx'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+                        <div class="cell-output cell-output-stdout">
+                            <pre><code># A tibble: 11 × 3
+   Tahun     x     y
+   &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
+ 1  2012  24.6  4.47
+ 2  2013  23.9  4.34
+ 3  2014  23.7  4.05
+ 4  2015  21.2  4.51
+ 5  2016  19.1  4.30
+ 6  2017  20.2  3.78
+ 7  2018  21.0  4.39
+ 8  2019  18.6  3.59
+ 9  2020  17.3  4.26
+10  2021  21.4  3.83
+11  2022  24.5  3.46</code></pre>
+                        </div>
+                        <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(dat)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+                        <div class="cell-output cell-output-stdout">
+                            <pre><code># A tibble: 6 × 3
+  Tahun     x     y
+  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
+1  2012  24.6  4.47
+2  2013  23.9  4.34
+3  2014  23.7  4.05
+4  2015  21.2  4.51
+5  2016  19.1  4.30
+6  2017  20.2  3.78</code></pre>
+                        </div>
+                    </div>
+                    <p>Package Plot X dan Y</p>
+                    <div class="cell">
+                        <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">'readxl'</span>)</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">setwd</span>(<span class="st">"C:/UAS METOPEL NAJMA RESTI A"</span>)</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>dat<span class="ot">&lt;-</span><span class="fu">read_excel</span>(<span class="st">'METOPEL NAJMA.xlsx'</span>)</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>regnasma<span class="ot">&lt;-</span><span class="fu">lm</span>(y<span class="sc">~</span>x,<span class="at">data =</span> dat)</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(dat<span class="sc">$</span>x,dat<span class="sc">$</span>y,<span class="at">xlab =</span> <span class="st">"Nilai Ekspor"</span>,<span class="at">ylab =</span> <span class="st">"Jumlah Pengangguran"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+                        <div class="cell-output-display">
+                            <p><img src="./figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="672"></p>
+                        </div>
+                    </div>
+                    <p>Package Plot Error terhadap Nilai Ekspor</p>
+                    <div class="cell">
+                        <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">'readxl'</span>)</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>dat<span class="sc">$</span>u<span class="ot">&lt;-</span><span class="fu">resid</span>(regnasma)</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(dat<span class="sc">$</span>x,dat<span class="sc">$</span>u,<span class="at">xlab =</span> <span class="st">"Nilai Ekspor"</span>,<span class="at">ylab =</span> <span class="st">"error"</span>)</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">h=</span><span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+                        <div class="cell-output-display">
+                            <p><img src="./figure-html/unnamed-chunk-4-1.png" class="img-fluid" width="672"></p>
+                        </div>
+                    </div>
+                </section>
+                <section id="metode-analisis" class="level3" data-number="3.2">
+                    <h3 data-number="3.2" class="anchored" data-anchor-id="metode-analisis"><span class="header-section-number">3.2</span> Metode analisis</h3>
+                    <p>Teknik analisis yang digunakan dalam penelitian ini adalah teknik kuantitatif deskriptif. Metode yang dipilih adalah regresi univariat atau Ordinary Least Square (OLS) dengan 1 variabel independen yaitu nilai ekspor dan 1 variabel
+                        dependen yaitu jumlah pengangguran. Penelitian ini bermaksud mencari hubungan antara nilai ekspor (X) dengan jumlah pengangguran (Y). Spesifikasi yang dilakukan adalah:</p>
+                    <p>Y=0+1x+</p>
+                    <p>di mana Y adalah Jumlah pengangguran di Indonesia tahun 2012 sampai 2022, dan X adalah Nilai ekspor Indonesia tahun 2012 sampai 2022.</p>
+                </section>
+            </section>
+            <section id="pembahasan" class="level2" data-number="4">
+                <h2 data-number="4" class="anchored" data-anchor-id="pembahasan"><span class="header-section-number">4</span> Pembahasan</h2>
+                <section id="pembahasan-masalah" class="level3" data-number="4.1">
+                    <h3 data-number="4.1" class="anchored" data-anchor-id="pembahasan-masalah"><span class="header-section-number">4.1</span> Pembahasan masalah</h3>
+                    <p>Penelitian ini menggunakan OLS, yang dimana isi pembahasannya yaitu menghubungkan Nilai ekspor dengan Jumlah Pengangguran di Indonesia tahun 2012 sampai 2020 tersebut memiliki tampilan regresi sebagai berikut:</p>
+                    <table class="table">
+                        <thead>
+                            <tr class="header">
+                                <th>Variabel</th>
+                                <th>Coefficient</th>
+                                <th>Std.Error</th>
+                                <th>t-value</th>
+                                <th>Prob(.)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="odd">
+                                <td>Intercept</td>
+                                <td>4.022825</td>
+                                <td>1.053698</td>
+                                <td>3.818</td>
+                                <td>0.0041</td>
+                            </tr>
+                            <tr class="even">
+                                <td>x (Nilai Ekspor)</td>
+                                <td>0.003062</td>
+                                <td>0.048923</td>
+                                <td>0.063</td>
+                                <td>0.9515</td>
+                            </tr>
+                            <tr class="odd">
+                                <td>R squared</td>
+                                <td>0.0004351</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr class="even">
+                                <td>Adjusted R-Squared</td>
+                                <td>0.9515</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr class="odd">
+                                <td>F-Statistic</td>
+                                <td>0.003918</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr class="even">
+                                <td>Prob(F-Statistic)</td>
+                                <td>0.9515</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>Hasil regresi yang telah didapat dimasukan ke dalam rumus persamaan yang ada sehingga menjadi:</p>
+                    <p>Y = 4.022825 + 0.003062 + 0.0004351 + 0.9515 + error</p>
+                    <p>Nilai Ekspor yang tinggi dapat mendorong pertumbuhan ekonomi. Pertumbuhan ekonomi yang tinggi dapat meningkatkan permintaan tenaga kerja, sehingga dapat mengurangi pengangguran. Atau bisa pula menggunakan dorongan investasi di sektor-sektor
+                        yang memiliki keunggulan komparatif, sehungga dapat menciptakan lapangan kerja baru. Maupun dengan adanya pelatihan-pelatihan dan pendidikan dari program pembangunan yang berasal dari pendapatan negara yang tinggi. Namun, pengaruh
+                        nilai ekspor terhadap jumlah pengangguran tidak selalu bersifat positif. Pada kondisi tertentu, nilai ekspor yang tinggi dapat justru meningkatkan pengangguran. Hal ini dapat terjadi jika peningkatan nilai ekspor hanya dinikmati
+                        oleh segelintir orang, sedangkan sebagian besar masyarakat tidak merasakan manfaatnya. Selain itu, peningkatan nilai ekspor juga dapat menyebabkan terjadinya persaingan tenaga kerja yang semakin ketat, sehingga dapat menyebabkan&nbsp;pengangguran.
+                        Namun, pengaruh nilai ekspor terhadap jumlah pengangguran tidak selalu bersifat positif. Pada kondisi tertentu, nilai ekspor yang tinggi dapat justru meningkatkan pengangguran. Hal ini dapat terjadi jika peningkatan nilai ekspor
+                        hanya dinikmati oleh segelintir orang, sedangkan sebagian besar masyarakat tidak merasakan manfaatnya. Selain itu, peningkatan nilai ekspor juga dapat menyebabkan terjadinya persaingan tenaga kerja yang semakin ketat, sehingga
+                        dapat menyebabkan&nbsp;pengangguran.Namun, pengaruh nilai ekspor terhadap jumlah pengangguran tidak selalu bersifat positif. Pada kondisi tertentu, nilai ekspor yang tinggi dapat justru meningkatkan pengangguran. Hal ini dapat
+                        terjadi jika peningkatan nilai ekspor hanya dinikmati oleh segelintir orang, sedangkan sebagian besar masyarakat tidak merasakan manfaatnya. Selain itu, peningkatan nilai ekspor juga dapat menyebabkan terjadinya persaingan tenaga
+                        kerja yang semakin ketat, sehingga dapat menyebabkan&nbsp;pengangguran. Namun, pengaruh nilai ekspor terhadap jumlah pengangguran tidak selalu bersifat positif. Pada kondisi tertentu, nilai ekspor yang tinggi dapat justru meningkatkan
+                        pengangguran. Hal ini dapat terjadi jika peningkatan nilai ekspor hanya dinikmati oleh segelintir orang, sedangkan sebagian besar masyarakat tidak merasakan manfaatnya. Selain itu, peningkatan nilai ekspor juga dapat menyebabkan
+                        terjadinya persaingan tenaga kerja yang semakin ketat, sehingga dapat menyebabkan&nbsp;pengangguran. Namun, pengaruh nilai ekspor terhadap jumlah pengangguran tidak selalu bersifat positif atau pun positif namun tidak terlihat
+                        sginifikan. Dibuktikan dengan hasil penelitian regresi diatas yaitu tidak ada hubungan yang signifikan antara variabel x dan y. Koefisien untuk variabel x (0.003062) sangat kecil dan tidak signifikan secara statistik (p-value =
+                        0.9515). Ini menunjukkan bahwa perubahan nilai x tidak memiliki pengaruh yang berarti pada nilai y. Model ini memiliki daya penjelas yang sangat rendah. Multiple R-squared hanya 0.0004351, yang berarti bahwa hanya 0.04% dari variasi
+                        dalam nilai y yang dapat dijelaskan oleh model ini. Model ini tidak dapat diandalkan untuk membuat prediksi. Adjusted R-squared bernilai negatif (-0.1106), yang menunjukkan bahwa model ini tidak lebih baik daripada model yang hanya
+                        menggunakan intercept untuk memprediksi nilai y.</p>
+                </section>
+                <section id="analisis-masalah" class="level3" data-number="4.2">
+                    <h3 data-number="4.2" class="anchored" data-anchor-id="analisis-masalah"><span class="header-section-number">4.2</span> Analisis masalah</h3>
+                    <p>Hasil regresinya adalah</p>
+                    <div class="cell">
+                        <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>regnasma<span class="ot">&lt;-</span><span class="fu">lm</span>(y<span class="sc">~</span>x,<span class="at">data =</span> dat)</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(regnasma)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+                        <div class="cell-output cell-output-stdout">
+                            <pre><code>
+Call:
+lm(formula = y ~ x, data = dat)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-0.6358 -0.2815  0.1791  0.2699  0.4264 
+
+Coefficients:
+            Estimate Std. Error t value Pr(&gt;|t|)   
+(Intercept) 4.022825   1.053608   3.818   0.0041 **
+x           0.003062   0.048923   0.063   0.9515   
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.3876 on 9 degrees of freedom
+Multiple R-squared:  0.0004351, Adjusted R-squared:  -0.1106 
+F-statistic: 0.003918 on 1 and 9 DF,  p-value: 0.9515</code></pre>
+                        </div>
+                    </div>
+                    <pre><code></code></pre>
+                </section>
+            </section>
+            <section id="kesimpulan" class="level2" data-number="5">
+                <h2 data-number="5" class="anchored" data-anchor-id="kesimpulan"><span class="header-section-number">5</span> Kesimpulan</h2>
+                <p>Berdasarkan data yang diberikan, dapat disimpulkan bahwa nilai ekspor tidak memiliki pengaruh yang signifikan terhadap jumlah pengangguran di Indonesia. Hal ini didukung oleh hasil regresi yang menunjukkan bahwa koefisien untuk variabel
+                    nilai ekspor (x) adalah 0.003062, yang sangat kecil dan tidak signifikan secara statistik (p-value = 0.9515).</p>
+                <p>Namun, perlu dicatat bahwa hasil regresi ini hanya berdasarkan data selama periode 2012-2022. Pengaruh nilai ekspor terhadap jumlah pengangguran dapat berbeda-beda pada periode yang berbeda, tergantung pada faktor-faktor lain yang mempengaruhinya,
+                    seperti kebijakan pemerintah, struktur perekonomian, dan faktor-faktor lain.</p>
+            </section>
+            <section id="referensi" class="level2" data-number="6">
+                <h2 data-number="6" class="anchored" data-anchor-id="referensi"><span class="header-section-number">6</span> Referensi</h2>
+                <p>El Ayyubi, S., Anggraeni, L., &amp; Mahiswari, A. (2018). Pengaruh Bank Syariah terhadap Pertumbuhan Ekonomi di Indonesia. <em>Al-Muzara’ah</em>, <em>5</em>, 88–106. <a href="https://doi.org/10.29244/jam.5.2.88-106" class="uri">https://doi.org/10.29244/jam.5.2.88-106</a></p>
+                <p>Findlay, R. (2006). <em>Eli Heckscher, International Trade, and Economic History</em>. MIT Press.</p>
+                <p><em>Indikator Pembangunan Dunia | Bank Data</em>. (n.d.). Retrieved January 21, 2024, from <a href="https://databank.worldbank.org/source/world-development-indicators" class="uri">https://databank.worldbank.org/source/world-development-indicators</a></p>
+                <p>Indonesia, B. P. S. (n.d.-a). <em>Jumlah dan Persentase Penduduk Bekerja dan Pengangguran—Tabel Statistik</em>. Retrieved January 21, 2024, from <a href="https://www.bps.go.id/id/statistics-table/2/MTk1MyMy/jumlah-dan-persentase-penduduk-bekerja-dan-pengangguran.html"
+                        class="uri">https://www.bps.go.id/id/statistics-table/2/MTk1MyMy/jumlah-dan-persentase-penduduk-bekerja-dan-pengangguran.html</a></p>
+                <p>Indonesia, B. P. S. (n.d.-b). <em>Nilai Ekspor—Tabel Statistik</em>. Retrieved January 21, 2024, from <a href="https://www.bps.go.id/id/statistics-table/2/MTk2IzI=/nilai-ekspor--juta-us--.html" class="uri">https://www.bps.go.id/id/statistics-table/2/MTk2IzI=/nilai-ekspor--juta-us--.html</a></p>
+                <p>Marpaung, A., &amp; Purba, J. H. (2017). Pengaruh Nilai Tukar Terhadap Ekspor Dan Dampaknya Terhadap Pertumbuhan Ekonomi Indonesia [The Effect of Exchange Rates on Exports and its Impact on Indonesia’s Economic Growth]. <em>DeReMa (Development Research of Management): Jurnal Manajemen</em>,
+                    <em>12</em>, 285. <a href="https://doi.org/10.19166/derema.v12i2.500" class="uri">https://doi.org/10.19166/derema.v12i2.500</a></p>
+                <p><em>(PDF) Makroekonomi oleh N. Gregory Mankiw edisi ke-9 | Md.Zardisul Karim—Academia.edu</em>. (n.d.). Retrieved January 21, 2024, from <a href="https://www.academia.edu/44229381/Macroeconomics_by_N_Gregory_Mankiw_9th_edition" class="uri">https://www.academia.edu/44229381/Macroeconomics_by_N_Gregory_Mankiw_9th_edition</a></p>
+                <p><em>Teori Umum Ketenagakerjaan, Bunga dan Uang oleh John Maynard Keynes</em>. (n.d.). Retrieved January 21, 2024, from <a href="https://www.marxists.org/reference/subject/economics/keynes/general-theory/" class="uri">https://www.marxists.org/reference/subject/economics/keynes/general-theory/</a></p>
+                <p>Yulianti, R., Khairuna, K., &amp; Ibrahim, N. (2023). ANALISIS TINGKAT PENGANGGURAN TERBUKA DAN EKSPOR IMPOR TERHADAP PERTUMBUHAN EKONOMI INDONESIA PERIODE SEBELUM DAN SAAT PANDEMI COVID-19. <em>JOURNAL OF ECONOMIC SCIENCE (JECS)</em>,
+                    <em>9</em>(1), Article 1. <a href="https://doi.org/10.33143/jecs.v9i1.2867" class="uri">https://doi.org/10.33143/jecs.v9i1.2867</a></p>
+                <p>Yumpu.com. (n.d.). <em>Hubungan Pendapatan dan Kurs di Indonesia—BAPPEDA Aceh</em>. yumpu.com. Retrieved January 21, 2024, from <a href="https://www.yumpu.com/id/document/view/17036217/hubungan-pendapatan-dan-kurs-di-indonesia-bappeda-aceh"
+                        class="uri">https://www.yumpu.com/id/document/view/17036217/hubungan-pendapatan-dan-kurs-di-indonesia-bappeda-aceh</a></p>
+            </section>
+
+        </main>
+        <!-- /main column -->
+        <script id="quarto-html-after-body" type="application/javascript">
+            window.document.addEventListener("DOMContentLoaded", function(event) {
+                const toggleBodyColorMode = (bsSheetEl) => {
+                    const mode = bsSheetEl.getAttribute("data-mode");
+                    const bodyEl = window.document.querySelector("body");
+                    if (mode === "dark") {
+                        bodyEl.classList.add("quarto-dark");
+                        bodyEl.classList.remove("quarto-light");
+                    } else {
+                        bodyEl.classList.add("quarto-light");
+                        bodyEl.classList.remove("quarto-dark");
+                    }
+                }
+                const toggleBodyColorPrimary = () => {
+                    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+                    if (bsSheetEl) {
+                        toggleBodyColorMode(bsSheetEl);
+                    }
+                }
+                toggleBodyColorPrimary();
+                const icon = "";
+                const anchorJS = new window.AnchorJS();
+                anchorJS.options = {
+                    placement: 'right',
+                    icon: icon
+                };
+                anchorJS.add('.anchored');
+                const isCodeAnnotation = (el) => {
+                    for (const clz of el.classList) {
+                        if (clz.startsWith('code-annotation-')) {
+                            return true;
+                        }
+                    }
+                    return false;
+                }
+                const clipboard = new window.ClipboardJS('.code-copy-button', {
+                    text: function(trigger) {
+                        const codeEl = trigger.previousElementSibling.cloneNode(true);
+                        for (const childEl of codeEl.children) {
+                            if (isCodeAnnotation(childEl)) {
+                                childEl.remove();
+                            }
+                        }
+                        return codeEl.innerText;
+                    }
+                });
+                clipboard.on('success', function(e) {
+                    // button target
+                    const button = e.trigger;
+                    // don't keep focus
+                    button.blur();
+                    // flash "checked"
+                    button.classList.add('code-copy-button-checked');
+                    var currentTitle = button.getAttribute("title");
+                    button.setAttribute("title", "Copied!");
+                    let tooltip;
+                    if (window.bootstrap) {
+                        button.setAttribute("data-bs-toggle", "tooltip");
+                        button.setAttribute("data-bs-placement", "left");
+                        button.setAttribute("data-bs-title", "Copied!");
+                        tooltip = new bootstrap.Tooltip(button, {
+                            trigger: "manual",
+                            customClass: "code-copy-button-tooltip",
+                            offset: [0, -8]
+                        });
+                        tooltip.show();
+                    }
+                    setTimeout(function() {
+                        if (tooltip) {
+                            tooltip.hide();
+                            button.removeAttribute("data-bs-title");
+                            button.removeAttribute("data-bs-toggle");
+                            button.removeAttribute("data-bs-placement");
+                        }
+                        button.setAttribute("title", currentTitle);
+                        button.classList.remove('code-copy-button-checked');
+                    }, 1000);
+                    // clear code selection
+                    e.clearSelection();
+                });
+
+                function tippyHover(el, contentFn) {
+                    const config = {
+                        allowHTML: true,
+                        content: contentFn,
+                        maxWidth: 500,
+                        delay: 100,
+                        arrow: false,
+                        appendTo: function(el) {
+                            return el.parentElement;
+                        },
+                        interactive: true,
+                        interactiveBorder: 10,
+                        theme: 'quarto',
+                        placement: 'bottom-start'
+                    };
+                    window.tippy(el, config);
+                }
+                const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+                for (var i = 0; i < noterefs.length; i++) {
+                    const ref = noterefs[i];
+                    tippyHover(ref, function() {
+                        // use id or data attribute instead here
+                        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+                        try {
+                            href = new URL(href).hash;
+                        } catch {}
+                        const id = href.replace(/^#\/?/, "");
+                        const note = window.document.getElementById(id);
+                        return note.innerHTML;
+                    });
+                }
+                let selectedAnnoteEl;
+                const selectorForAnnotation = (cell, annotation) => {
+                    let cellAttr = 'data-code-cell="' + cell + '"';
+                    let lineAttr = 'data-code-annotation="' + annotation + '"';
+                    const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+                    return selector;
+                }
+                const selectCodeLines = (annoteEl) => {
+                    const doc = window.document;
+                    const targetCell = annoteEl.getAttribute("data-target-cell");
+                    const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+                    const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+                    const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+                    const lineIds = lines.map((line) => {
+                        return targetCell + "-" + line;
+                    })
+                    let top = null;
+                    let height = null;
+                    let parent = null;
+                    if (lineIds.length > 0) {
+                        //compute the position of the single el (top and bottom and make a div)
+                        const el = window.document.getElementById(lineIds[0]);
+                        top = el.offsetTop;
+                        height = el.offsetHeight;
+                        parent = el.parentElement.parentElement;
+                        if (lineIds.length > 1) {
+                            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+                            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+                            height = bottom - top;
+                        }
+                        if (top !== null && height !== null && parent !== null) {
+                            // cook up a div (if necessary) and position it 
+                            let div = window.document.getElementById("code-annotation-line-highlight");
+                            if (div === null) {
+                                div = window.document.createElement("div");
+                                div.setAttribute("id", "code-annotation-line-highlight");
+                                div.style.position = 'absolute';
+                                parent.appendChild(div);
+                            }
+                            div.style.top = top - 2 + "px";
+                            div.style.height = height + 4 + "px";
+                            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+                            if (gutterDiv === null) {
+                                gutterDiv = window.document.createElement("div");
+                                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                                gutterDiv.style.position = 'absolute';
+                                const codeCell = window.document.getElementById(targetCell);
+                                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                                gutter.appendChild(gutterDiv);
+                            }
+                            gutterDiv.style.top = top - 2 + "px";
+                            gutterDiv.style.height = height + 4 + "px";
+                        }
+                        selectedAnnoteEl = annoteEl;
+                    }
+                };
+                const unselectCodeLines = () => {
+                    const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+                    elementsIds.forEach((elId) => {
+                        const div = window.document.getElementById(elId);
+                        if (div) {
+                            div.remove();
+                        }
+                    });
+                    selectedAnnoteEl = undefined;
+                };
+                // Attach click handler to the DT
+                const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+                for (const annoteDlNode of annoteDls) {
+                    annoteDlNode.addEventListener('click', (event) => {
+                        const clickedEl = event.target;
+                        if (clickedEl !== selectedAnnoteEl) {
+                            unselectCodeLines();
+                            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+                            if (activeEl) {
+                                activeEl.classList.remove('code-annotation-active');
+                            }
+                            selectCodeLines(clickedEl);
+                            clickedEl.classList.add('code-annotation-active');
+                        } else {
+                            // Unselect the line
+                            unselectCodeLines();
+                            clickedEl.classList.remove('code-annotation-active');
+                        }
+                    });
+                }
+                const findCites = (el) => {
+                    const parentEl = el.parentElement;
+                    if (parentEl) {
+                        const cites = parentEl.dataset.cites;
+                        if (cites) {
+                            return {
+                                el,
+                                cites: cites.split(' ')
+                            };
+                        } else {
+                            return findCites(el.parentElement)
+                        }
+                    } else {
+                        return undefined;
+                    }
+                };
+                var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+                for (var i = 0; i < bibliorefs.length; i++) {
+                    const ref = bibliorefs[i];
+                    const citeInfo = findCites(ref);
+                    if (citeInfo) {
+                        tippyHover(citeInfo.el, function() {
+                            var popup = window.document.createElement('div');
+                            citeInfo.cites.forEach(function(cite) {
+                                var citeDiv = window.document.createElement('div');
+                                citeDiv.classList.add('hanging-indent');
+                                citeDiv.classList.add('csl-entry');
+                                var biblioDiv = window.document.getElementById('ref-' + cite);
+                                if (biblioDiv) {
+                                    citeDiv.innerHTML = biblioDiv.innerHTML;
+                                }
+                                popup.appendChild(citeDiv);
+                            });
+                            return popup.innerHTML;
+                        });
+                    }
+                }
+            });
+        </script>
+    </div>
+    <!-- /content -->
+
+
+
+</body>
+
+</html>
